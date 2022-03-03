@@ -1,0 +1,42 @@
+mixin pagination(args)
+    - let arr = args
+    - let mid = "df"
+
+    .pagination-group
+        ul.pagination-group__list 
+            if arr.currentPage !== 1
+                li.pagination-group__item.prewPage 
+                    a.pagination-group__link 
+                        i.arrowback
+
+
+            - for (let i = 1; i <= arr.countOnPage; i++) 
+              if i == arr.currentPage    
+                li.pagination-group__item.current
+                    a.pagination-group__link= i
+
+              else if (i < arr.currentPage && i >= arr.currentPage - 2 ) || (i > arr.currentPage && i <= arr.currentPage + 2)
+                li.pagination-group__item
+                    a.pagination-group__link= i
+              else 
+                //- li.pagination-group__item
+                //-     a.pagination-group__link ...
+
+            if arr.currentPage !== arr.pagemax
+                li.pagination-group__item
+                    a.pagination-group__link ...
+
+            if arr.currentPage !== arr.pagemax
+                li.pagination-group__item
+                    a.pagination-group__link= arr.pagemax
+                        
+
+            if arr.currentPage !== arr.pagemax
+                li.pagination-group__item.nextPage
+                    a.pagination-group__link
+                        i.arrowforward
+
+        .pagination-description= arr.description
+
+         
+

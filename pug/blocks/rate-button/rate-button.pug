@@ -1,0 +1,10 @@
+mixin rate-button(args)
+    - let arg = args;
+
+        .rate-button-wrapper
+            for item in arg
+                - let n = 1;
+                button.rate-button__button
+                   - for (let i = 0; i < 5; i++ )
+                     - let ico = i < item.rate ? "rate": " ";
+                        span.rate-button__icon(class= ico)

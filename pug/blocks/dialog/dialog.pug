@@ -1,0 +1,21 @@
+mixin dialog(args) 
+  - let objArgs = args 
+
+  section.dialog
+    .dialog__header
+      if objArgs.title
+        h2.dialog__title= objArgs.title
+      else if objArgs.number 
+        .dialog__title-wrapper
+          h2.dialog__room-title
+            | №
+            .dialog__number= objArgs.number + " "
+            .dialog__roomtype= " " + objArgs.roomType
+          .dialog__cost
+            .dialog__cost--bold
+              = objArgs.cost
+              | ₽ 
+            | в сутки
+    .dialog__content
+      form.dialog__form(action="self" method="post")
+        block

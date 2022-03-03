@@ -1,0 +1,13 @@
+mixin comment(args)
+  - let objArgs = args 
+
+  .comment
+    .comment__column
+      .comment__avatar
+      .comment__button
+        .mt8
+          +like-buttons({type: "button" }, [{label: "", count: 2, class: "" }])
+    .comment__column 
+      .comment__author= objArgs.author
+      .comment__timeAgo= objArgs.timeAgo
+      .comment__text= objArgs.text

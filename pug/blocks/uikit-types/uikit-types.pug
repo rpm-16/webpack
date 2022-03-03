@@ -1,0 +1,9 @@
+mixin list-types(list)
+
+	ul.type-list
+		for item in list
+			li.type-list__item
+				.type-list__tag
+					p= item.name
+				.type-list__description
+					p= item.desc

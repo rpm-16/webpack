@@ -1,0 +1,7 @@
+mixin footer-nav(fobjArgs)
+
+		.site-map
+			ul.site-map__list 
+				for item in fobjArgs
+					li.site-map__item
+						a(href="#")= item.title

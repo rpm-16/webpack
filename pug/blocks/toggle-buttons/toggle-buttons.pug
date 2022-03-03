@@ -1,0 +1,11 @@
+mixin toggle(arg)
+  block variables
+    - let objArgs = arg;
+
+  block content
+    .toggle
+        ul.toggle__list
+            li.toggle__item
+                input.toggle__input(type= "checkbox" checked= objArgs.checked)
+                .toggle__label= objArgs.label                
+                    

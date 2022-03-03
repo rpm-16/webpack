@@ -1,0 +1,59 @@
+include ../../blocks/input/input
+include ../../blocks/form-group/form-group
+include ../../blocks/footer-sitemap/footer-sitemap
+
+-	let nav1 = [{ title: "О нас"}, {title: "Новости"}, {title: "Служба поддержки"}, {title: "Услуги"}]
+-	let nav2 = [{ title: "О сервисе"}, {title: "Наша команда"}, {title: "Вакансии"}, {title: "Инвесторы"}];
+-	let nav3 = [{ title: "Соглашения"}, {title: "Сообщества"}, {title: "Связь с нами"}];
+
+
+if !mobile
+	footer.footer 
+		.footer-row
+			.footer_grid
+				.footer__about 
+					include ../logo/logo
+					.footer_slogan
+						p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+				.footer__nav1.mt5
+					+form-group({title: "Навигация"})
+					.mt5
+						+footer-nav(nav1)
+				.footer__nav2
+					.mt5
+						+form-group({title: "О нас"})
+					.mt5
+						+footer-nav(nav2)
+				.footer__nav3 
+					.mt5
+						+form-group({title: "Служба поддержки"})
+					.mt5
+						+footer-nav(nav3)
+				.footer__nav4
+					.mt5
+						+form-group({title: "Подписка"})
+					.txt.mt16
+						p Получайте специальные предложения и новости сервиса
+					.mt24
+						+input({mclass: "", name: 'none', type: 'email', placeholder: "Email"})
+		.footer__bottom
+			.footer__copyright Copyright &#169 2018 Toxin отель. Все права защищены.
+			.footer__share-btns 
+				img(src="./img/tweet-btn.png", alt="Мы в Twitter")
+				img(src="./img/facebook-btn.png", alt="Мы в Facebook")
+				img(src="./img/instagram-btn.png", alt="Мы в Instagramm")
+	
+if mobile
+	.mt40
+	footer.footer
+			.footer-mobile
+				.footer-mobile_container
+						.mt
+							include ../logo/logo
+						.mt20
+							.footer-mobile__copyright Copyright &#169 2018 Toxin отель. Все права защищены.
+						.mt20
+							.footer-mobile__share-btns 
+									img(src="./img/tweet-btn.png", alt="Мы в Twitter")
+									img(src="./img/facebook-btn.png", alt="Мы в Facebook")
+									img(src="./img/instagram-btn.png", alt="Мы в Instagramm")

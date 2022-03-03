@@ -1,0 +1,50 @@
+.form-group {
+    padding: 0;
+    width: 100%;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    &__note {
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        font-weight: normal;
+        float: right;
+        color: $color-50;
+    }
+    
+}
+
+
+
+.accordion {
+    .form-group__note {
+        display: none;
+    }
+
+    .form-group__wrapper {
+        cursor: pointer;
+        background-image: url(../img/expand_more.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+
+    .form-group__body {
+        display: none;
+    }
+
+    .expanded {
+        display: block;
+    }
+}

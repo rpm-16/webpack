@@ -1,0 +1,55 @@
+.calendar {
+    height: 370px;
+    width: 320px;
+
+    .air-datepicker {
+      border: 1px solid red;
+      padding: 14px;
+      width: 320px;
+      box-sizing: border-box;
+      &-body {
+        &--day-name{
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 15px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: #BC9CFF;
+        }
+      }
+
+      &-nav {
+        &--title{
+          font-size: 19px;
+          font-weight: bold;
+        }
+      }
+
+      &--navigation{
+        margin-top: 5px;
+      }
+      &--content{
+        margin-top: 25px;
+      }
+      &-cell {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: rgba(31, 32, 65, 0.5);
+      }
+    }
+.-current-{
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  }
+}

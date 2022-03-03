@@ -1,0 +1,12 @@
+mixin date-dropdown(args)
+    - let objArgs = args
+    
+    .date-dropdown 
+        for item in objArgs
+            .date-dropdown-item
+                label.data-dropdown-wrapper
+                    .date-dropdown__label= item.label
+                    .date-dropdown-input-wrapper
+                        input.date-dropdown__input.date('type'='date')
+                .date-dropdown__datepicker
+

@@ -1,0 +1,60 @@
+.date-dropdown {
+    display: flex;
+    flex-direction: row;
+    flex-direction: flex-start;
+    justify-content: space-between;
+    width: 100%;
+
+    &-item {
+        flex-grow: 1;
+        // margin-right: 18px;
+      }
+
+    &__input {
+        background-image: url(../img/expand_more.png);
+        background-repeat: no-repeat;
+        background-position: bottom 50% right 15px; 
+
+        font-family: Montserrat;
+        height: 44px;
+        border: 1px solid $color-25;
+        border-radius: 4px;
+        padding: 15px 13px;
+        box-sizing: border-box;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: normal;
+        color: $color-25;   
+        width: 100%;    
+
+        &:focus, &:hover, &:active {
+            color: $color-50;
+            border: 1px solid $color-50;
+            outline: 0;
+            outline-offset: 0;
+               &::placeholder {
+                  color: $color-50;
+               }}
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+        padding-right: 36px;
+    }
+
+    &-wrapper{
+        position: relative;
+    }
+}
+
+
+.date-dropdown-input-wrapper {
+    margin-top: 5px;
+}
+
+.date-dropdown__label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

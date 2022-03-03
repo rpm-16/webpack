@@ -1,0 +1,7 @@
+mixin bullet-list(args)
+  - let arr = args
+    
+    .rule-group
+        ul.rule-group__list
+        for line in arr
+            li.rule-group__line= line.rule 

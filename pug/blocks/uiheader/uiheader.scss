@@ -1,0 +1,12 @@
+.uiheader {
+    height: 140px;
+    background: url("../img/logobg.png") no-repeat;
+    background-position: top 30px left 30px;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 90px;
+        background-position: top 20px left 20px;
+        }
+    }

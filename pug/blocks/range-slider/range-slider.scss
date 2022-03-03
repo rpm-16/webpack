@@ -1,0 +1,62 @@
+.range-form-group__note {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
+}
+
+.range-slider {
+    margin-top: 13px;
+    position: relative;
+    height: 20px;
+}
+
+.range-slider .irs--round {
+    height: 20px;
+}
+// .range-slider .irs--round{
+//     height: 10px;
+//     border: 1px solid red;
+// }
+
+//линия всего диапазона
+.range-slider .irs--round .irs-line {
+    top: 8px;
+    height: 4px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 2px;
+    
+}
+
+//бегунки
+.range-slider .irs--round .irs-handle {
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border: 2px solid #fff;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+// ыбранный диапазон
+.range-slider .irs--round .irs-bar {
+    top: 9px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 2px;
+}
+
+.range-slider__description {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(31, 32, 65, 0.5);
+    margin-top: 12px;
+}

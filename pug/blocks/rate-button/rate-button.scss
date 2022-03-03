@@ -1,0 +1,21 @@
+.rate-button__button{
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding-left:0px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.rate-button__icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/star_border.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.rate {
+    background-image: url('../img/star.png');
+}

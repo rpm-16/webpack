@@ -1,0 +1,10 @@
+mixin input(args)
+    - let objArgs = args
+    .input-group
+        input.input-group__input(
+            class= objArgs.class,
+            id= objArgs.id,
+            name= objArgs.name,
+            placeholder= objArgs.placeholder,
+            type= objArgs.type
+        )

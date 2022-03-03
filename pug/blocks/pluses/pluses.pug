@@ -1,0 +1,10 @@
+mixin pluses(args)
+ - let objArgs = args 
+
+ .pluses-group
+    for plus in objArgs
+        .pluses-group__item 
+            .pluses-group__icon
+                img(src= plus.icon)
+            .pluses-group__title= plus.title
+                .pluses-group__text= plus.text

@@ -1,0 +1,26 @@
+.like-button__button {
+    cursor: pointer;
+    height: 20px;
+    width: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.25);
+    background: url('../img/like-button-ico.png') no-repeat;
+    background-position: 4px 5px;
+    padding-left: 15px;
+
+    &:hover {
+        border: 1px solid #BC9CFF;
+        background: url('../img/like-button-ico-active.png') no-repeat;
+        background-position: 4px 5px;
+        color: #BC9CFF;
+    }
+}

@@ -1,0 +1,96 @@
+.rpm {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: black;
+    padding: 0px 20px;
+
+    .rpm-wrapper{
+        font-family: Arial;
+        background: rgba(0, 51, 102, 0.5);
+        padding: 10px;
+        color: white;
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        box-sizing: border-box;
+    
+        .rpm__phone {margin: 0px 20px;}
+    }
+
+
+    h1 {
+        color: #666;
+    }
+
+    .descript {
+        color: white;
+    }
+
+    main{ 
+        margin: 50px auto;
+        max-width: 1200px;
+    }
+
+
+    
+        .rpm-bones {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 30px auto;
+            justify-content: space-evenly;
+
+            &__link {
+                margin-top: 10px;
+                a {
+                    display: block;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px;
+                    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+                }
+            }
+
+            &__description {
+                margin-top: 10px;
+                font-size: 14px;
+                border-top: 1px dashed #666;
+                width: 100%;
+            }
+
+            &__progress {
+                display: none;
+            }
+    }
+    
+    .rpm-bones__item{
+        flex-basis: 280px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(0, 51, 102, 0.2);
+        padding: 10px;
+        background-color: #ccc;
+        margin-bottom: 10px;
+
+        &--done {
+            background-color: #6fcf97;
+            flex-basis: 280px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid rgba(0, 51, 102, 0.2);
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .rpm-bones__img {
+        height: 160px;
+        overflow: hidden;
+        img {width: 100%;}}
+}
+

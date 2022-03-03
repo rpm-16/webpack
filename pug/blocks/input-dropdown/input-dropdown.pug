@@ -1,0 +1,20 @@
+include ../input/input
+include ../buttons/buttons
+mixin input-dropdown(args)
+  - var objArgs = args;
+   
+  .input-dropdown
+    +input(args)(readonly= "readonly")
+    .input-dropdown__options
+      ul.input-dropdown__controls
+        for item in objArgs.items
+          li.input-dropdown__item= item.title
+            .wrp
+              button(type="button" data-action="delGuest" disabled= item.count === 0) -
+              span.input-dropdown__itemcount= item.count         
+              button(type="button" data-action="addGuest" disabled= item.count > 7) +
+
+      if objArgs.buttons        
+        .input-dropdown__buttons 
+          +button({name: "Очистить", class: "simple"})(data-action="clear")
+          +button({name: "Применить", class: "simple"})(data-action="submit")

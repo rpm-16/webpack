@@ -1,0 +1,1 @@
+let gallery = document.getElementsByClassName('.room-card__gallery');

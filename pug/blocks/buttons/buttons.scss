@@ -1,0 +1,115 @@
+.withbg { 
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 22px; 
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    box-sizing: border-box;
+    outline: none;
+        span {
+            color: #FFF;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+       }
+
+    &:hover, &--hover {
+        opacity: 0.5;
+    }
+
+    &--w99h44{
+        height: 44px;
+        width: 99px;
+    }
+
+    &--w320h44{
+        width: 320px;
+        height: 44px;
+    }
+
+    &--w196h34{
+        width: 196px;
+        height: 34px;
+    }
+}
+
+// с бордюром без фона
+.withborder { 
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 20px; 
+    background: linear-gradient(180deg, $primary-color 0%, #8BA4F9 100%);
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            color: $primary-color;
+       }
+    
+
+    &:hover, &--hover {
+        opacity: 0.5;
+    }
+
+    &--w99h44{
+        width: 99px;
+        height: 44px;
+        outline: none;
+        padding: 2px;
+        span {
+            margin: 0px;
+            height: 40px;
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+
+    &--w87h34{
+        width: 87px;
+        height: 34px;
+        outline: none;
+        padding: 2px;
+        span {
+            margin: 0px;
+            height: 30px;
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+
+}
+// без бордюра без фона
+
+.simple {
+    background-color: #fff;
+    border: none;
+    padding: 0px;
+    
+    cursor: pointer;
+    span {
+            background: #fff;
+            font-size: 12px;
+            line-height: 15px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            color: $primary-color;
+    }
+
+    &:hover {
+        background-color: #fff;
+        span{
+            color: rgba(31, 32, 65, 0.5);
+        
+        }
+    }
+}

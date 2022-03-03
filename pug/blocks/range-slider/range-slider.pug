@@ -1,0 +1,22 @@
+mixin range-slider(heading)
+    - let head = heading;
+   
+    .form-group
+        label.form-group_wrapper
+          .form-group__title= head.title
+          if head.note
+            .range-form-group__note#range-note= `${head.from}${head.unit} - ${head.to}${head.unit}`
+
+        .range-slider 
+            input.range-slider__input(
+                type = "text"
+                name = "cost"
+                value = ""
+                data-min = 0
+                data-max = 15000
+                data-from = head.from
+                data-to = head.to
+                data-unit = head.unit
+                )
+        if head.description
+            p.range-slider__description= head.description

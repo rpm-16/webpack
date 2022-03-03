@@ -1,0 +1,141 @@
+.room-card{
+    width: 269px;
+ 
+    .room-card__gallery {
+        width: 100%;
+        overflow: hidden;
+
+        ul {
+            list-style-type: none;
+            padding: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+            li{ 
+                border-radius: 4px 4px 0px 0px;
+            }
+        }
+    }
+
+    &__review {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        text-align: right;
+        color: rgba(31, 32, 65, 0.5);
+        display: flex;
+
+        &--bold {
+            font-weight: bold;
+            color: rgba(31, 32, 65, 0.5);
+            display: flex;
+        }
+    }
+
+    &__description {
+        margin: 10px 20px 15px 20px;
+    }
+
+    &__description-row {
+        margin-top: 5px;
+        display: flex;
+        flex-direction: flex-start;
+        justify-content: space-between;
+         align-items: center;
+
+    }
+
+    &__description-title-wrapper {
+            display: flex;
+            flex-direction: flex-start;
+            justify-content: space-between;
+            align-items: baseline;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+     }
+   
+}
+
+
+
+
+.room-card__description-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1F2041;
+    display: flex;
+    align-items: baseline;
+
+}
+.room-card__description-number {
+    font-size: 20px;
+}
+
+.room-card__description-cost {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    font-family: Montserrat;
+}
+
+.room-card__description-cost--bold {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(31, 32, 65, 0.5);
+        font-family: Montserrat;
+        display: flex;
+    }
+
+.room-card__description-roomtype {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF; 
+}
+
+.room-card__arrows {
+    position: absolute;
+    margin-top: -105px;
+    width: 269px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-card__left {
+    background-image: url('../img/slider_left.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 44px;
+    height: 44px;
+}
+
+.room-card__right {
+    background-image: url('../img/slider_left.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 44px;
+    height: 44px;
+    transform: rotate(180deg);
+}
+
+
+.room-card__controls {
+    position: absolute;
+    margin-top: -55px;
+    background: white;
+}
+
+

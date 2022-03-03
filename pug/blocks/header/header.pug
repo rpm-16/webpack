@@ -1,0 +1,38 @@
+include ../../blocks/buttons/buttons
+
+- 
+  let navItems = [{ title: "О нас", href: "#" }, 
+                  { title: "Услуги", href: "#", children: [{title: "услуга 1", href: "#"},{title: "услуга ", href: "#"}]}, 
+                  { title: "Вакансии", href: "#" }, 
+                  { title: "Новости", href: "#"}, 
+                  { title: "Соглашения", href: "#", children: [{title: "услуга 1", href: "#"},{title: "услуга ", href: "#"}] }
+                ]
+
+mixin navigate(arr)
+  ul 
+    for item in arr
+      if item.children
+        li
+          a(href="#").expand= item.title
+          +navigate(item.children)
+      else
+        li
+          a(href="#")= item.title
+
+
+header.header
+  include ../logo/logo
+  .wrap
+    nav.header__nav
+      +navigate(navItems)
+    ul.loginform
+      if userName
+        li.logined= userName
+      else
+        li
+          +button({name: "Войти", class: "withborder", size: "w87h34"})
+        li
+          +button({name: "Зарегистрироваться", class: "withbg", size: "w196h34", hovered: false})         
+
+
+    

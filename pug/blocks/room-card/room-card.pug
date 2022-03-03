@@ -1,0 +1,35 @@
+include ../rate-button/rate-button
+mixin roomCard(args)
+  - let objArgs = args
+
+  .room-card
+    .room-card__gallery
+      ul
+        for line in objArgs.imgList
+          li
+            img(src= line)
+      .room-card__arrows 
+        i.room-card__left
+        i.room-card__right
+      .room-card__controls 
+        ul
+          for line in objArgs.imgList
+            li 
+
+    .room-card__description
+      .room-card__description-title-wrapper
+            h2.room-card__description-title
+              | №
+              .room-card__description-number= objArgs.number + " "
+              .room-card__description-roomtype= " " + objArgs.roomType
+            .room-card__description-cost--bold
+              = objArgs.cost + "₽ "
+              .room-card__description-cost
+                | в сутки
+      .room-card__description-row
+        .room-card__rate
+          +rate-button({rate: 5})
+        .room-card__review--bold= objArgs.reviewCount + " "
+          .room-card__review
+            | Отзывов
+    

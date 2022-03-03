@@ -1,0 +1,7 @@
+mixin button(args)
+  
+  block variables
+    - let objButton = args
+      
+  button.button(type="button", class= args.class+" "+args.class+"--"+args.size)
+    span= args.name

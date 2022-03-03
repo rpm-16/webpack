@@ -1,0 +1,11 @@
+mixin radiobuttons(heading, args)
+    - let head = heading;
+    - let arg = args;
+
+        .radiobutton
+            ul.radiobutton__list
+                for t in arg
+                    li.radiobutton__item
+                        input(type= head.type name= head.name checked= t.checked)
+                        .radiobutton__label= t.label
+                    

@@ -1,0 +1,13 @@
+mixin checkbox(heading, args)
+    - let head = heading;
+    - let objArgs = args;
+
+    .checkbox-group
+        ul.checkbox-group__list
+            for item in objArgs
+                li.checkbox__list__item
+                    .checkbox__list__input
+                        input(type= head.type checked= item.checked)
+                    .checkbox__list__label= item.label
+                        if item.note 
+                            .checkbox-group__note= item.note

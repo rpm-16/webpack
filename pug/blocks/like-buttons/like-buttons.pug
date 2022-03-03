@@ -1,0 +1,9 @@
+mixin like-buttons(heading, args)
+
+    - let head = heading;
+    - let arg = args;
+
+    .like-button
+        for t in arg
+            button(class= t.class type= head.type).like-button__button
+                span= t.count          
